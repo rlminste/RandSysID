@@ -10,6 +10,8 @@ function [Ar,Br,Cr] = era(U,S,V,r,m,l)
 %
 % Outputs:
 %    - Ar,Br,Cr identified discrete-time system matrices
+%
+% - Written by 
 
 nrH = max(size(U));
 ncH = max(size(V));

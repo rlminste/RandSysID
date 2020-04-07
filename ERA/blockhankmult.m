@@ -18,7 +18,7 @@ function y = blockhankmult(T,x,s,l,m,tflag)
 %
 % y = final matvec product
 %
-%
+% - Written by Rachel Minster, March 2020
 
 % swap l and m for transpose multiplication
 

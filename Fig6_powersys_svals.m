@@ -7,7 +7,6 @@
 
 
 %load matrices
-addpath('test_matrices')
 load powersystem155.mat
 
 %parameters

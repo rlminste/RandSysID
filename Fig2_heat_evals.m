@@ -7,8 +7,6 @@
 
 
 %load matrices
-addpath('test_matrices')
-
 load steel_A.mat
 load steel_B.mat
 load steel_C.mat
