@@ -12,5 +12,6 @@ This code requires the MATLAB Control Systems Toolbox
 
 # Startup
 Before using codes, run 
-   addpath('test_matrices','ERA')
+
+   addpath('test_matrices', 'ERA')
 
