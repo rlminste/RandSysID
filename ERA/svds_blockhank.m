@@ -13,6 +13,8 @@ function y = svds_blockhank(x,tflag,T,l,m,s)
 %       s: number of block rows/columns of H
 %
 % Outputs: y = Hx or H'x
+%
+% - Written by Arvind K. Saibaba and Rachel Minster, 2020
 
     if strcmp(tflag,'notransp')
         y = blockhankmult(T,x,s,l,m,0);

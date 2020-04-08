@@ -19,6 +19,8 @@ function [A,B,C,t] = impulse_era(markov,s,l,m,r,method)
 % Outputs: 
 %       A,B,C: identified system matrices
 %       t: timing for the chosen identification method
+%
+% - Written by Arvind K. Saibaba and Rachel Minster, 2020
 
 %rsvd parameters
 rho = 20;

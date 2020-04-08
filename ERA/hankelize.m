@@ -7,6 +7,8 @@ function H = hankelize(markov,s,l,m)
 %   s: number of block rows/columns
 %   l: number of outputs
 %   m: number of inputs
+%
+% - Written by Rachel Minster, 2020
 
 H = zeros(s*l,s*m);
 

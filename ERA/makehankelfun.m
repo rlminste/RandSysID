@@ -13,6 +13,10 @@ function HF = makehankelfun(markov,s,l,m,tsignal)
 % Outputs:
 %   - HF: operator (funmat) representing multiplication with block Hankel
 %   matrix
+%
+% 
+% - Written by Eric Hallman, 2020
+% - Modified by Rachel Minster, 2020
 
     N = 2*s-1; 
     

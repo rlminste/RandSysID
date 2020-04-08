@@ -9,6 +9,9 @@ function [U,S,V] = rsvdFun(Afun,n,k,p,maxiter)
 %    - maxiter: number of subspace iterations
 % 
 % Outputs: U,S,V so that A = USV'
+%
+% - Written by Eric Hallman, 2020
+% - Modified by Rachel Minster, 2020
 
 Omega = randn(n,k+p);
 

@@ -12,6 +12,8 @@ function [markov_proj, W1, W2,t_newmarkov] = tera(markov,epsilon)
 %    - W2: projection basis m x r2
 %    - t_newmarkov: time of forming new markov parameters
 %
+% - Written by Arvind K. Saibaba and Rachel Minster, 2020
+%
 % Reference: Kramer and Gugercin, 'Tangential and Interpolation-based
 %       Eigensystem Realization Algorithm for MIMO Systems', Mathematical and
 %       Computer Modelling of Dynamical Systems, 2016
