@@ -1,4 +1,4 @@
-function [A,B,C,t] = impulse_era(markov,s,l,m,r,method)
+function [A,B,C,t] = impulse_era(markov,s,l,m,r,method,parameters)
 %
 %runs system identification algorithms
 %
@@ -15,6 +15,10 @@ function [A,B,C,t] = impulse_era(markov,s,l,m,r,method)
 %            - 'randsvdhankel' runs RandSVD-H
 %            - 'tera' runs TERA
 %            - 'randtera' runs RandTERA
+%       parameters: structure holding parameters for RandSVD and TERA if using
+%            - parameters.rho: oversampling parameters (default 20)
+%            - parameters.maxiter: number of subspace iterations (default 1)
+%            - parameters.epsilon: threshold for TERA (default 1e-2)
 %
 % Outputs: 
 %       A,B,C: identified system matrices
@@ -22,12 +26,19 @@ function [A,B,C,t] = impulse_era(markov,s,l,m,r,method)
 %
 % - Written by Arvind K. Saibaba and Rachel Minster, 2020
 
-%rsvd parameters
-rho = 20;
-maxiter = 1;
+if nargin < 7
+    %rsvd parameters
+    rho = 20;
+    maxiter = 1;
 
-%tera parameters
-epsilon = 1e-2;
+    %tera parameters
+    epsilon = 1e-2;
+else 
+    rho = parameters.rho;
+    maxiter = parameters.maxiter;
+    epsilon = parameters.epsilon;
+end
+    
 
 switch method
     % Full SVD-ERA
