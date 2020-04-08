@@ -8,6 +8,8 @@ function z = hankelmult(x,c,r)
 %
 % Output:
 %  z: multiplication H*x, whether x is a matrix or vector
+%
+% - Written by Rachel Minster, 2020
 
 [~,numcol] = size(x);
 
