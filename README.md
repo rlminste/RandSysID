@@ -12,7 +12,7 @@ Minster, Rachel, Arvind K. Saibaba, Jishnudeep Kar, and Aranya Chakrabortty.  "E
   year={2020}
 }
 ```
-
+Thanks to NSF for their support through the grants DMS-1745654, DMS-1821149, and ECS-1711004.
 
 # Toolbox Requirements
 This code requires the MATLAB Control Systems Toolbox
